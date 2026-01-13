@@ -9,7 +9,6 @@ module "web_sg" {
   environment = "prod"
   vpc_id      = var.vpc_id
 
-  # ⚠️ Intentional misconfiguration for demo
   ssh_cidrs = ["0.0.0.0/0"]
 
   http_cidrs  = ["0.0.0.0/0"]
